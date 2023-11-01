@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none !important;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background: #0a0907;
+}
+
+section {
+  padding: 5rem 1rem;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: #222;
+}
+
+.header {
+  z-index: 1000;
+  padding: 4rem 0;
+  background-color: #fff;
+}
+.header.active {
+  padding: 2rem 0;
+  background: #0a0907;
+}
+.header .logo {
+  font-size: 3rem;
+  color: #222;
+  font-weight: bolder;
+}
+.header .nav a {
+  font-size: 2rem;
+  margin-right: 2rem;
+  color: #222;
+}
+.header .nav a:hover {
+  text-decoration: underline !important;
+  text-underline-offset: 0.5rem;
+}
+.header .icons div {
+  font-size: 2.5rem;
+  color: #0a0907;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+.header #menu-btn {
+  display: none;
+}
+
+.home {
+  background: url(../images/home.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.home span {
+  margin-top: 10px;
+  border-radius: 10px;
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+}
+.home h3 {
+  text-align: start;
+  padding: 1rem 0;
+  font-size: 6rem;
+  color: #fff;
+}
+
+.about {
+  background-color: #222;
+  color: #fff;
+  font-weight: bolder;
+}
+.about h1 {
+  text-align: center;
+}
+.about p {
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 2;
+  color: #666;
+}
+.about .icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  gap: 1.5rem;
+}
+.about .icons-container .icons {
+  padding: 2rem;
+  background: #eee;
+  text-align: center;
+  flex: 1 1 16rem;
+}
+.about .icons-container .icons i {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  color: #0a0907;
+}
+.about .icons-container .icons h3 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: #222;
+}
+
+.image-card .card {
+  width: 35rem; /* Adjust the card width as needed */
+  margin-bottom: 3rem;
+}
+.image-card .card-img-top {
+  border: #666;
+}
+.image-card .card-body {
+  /* Styles for the card body (text/content) */
+}
+.image-card .card-body h5 {
+  text-align: center;
+}
+.image-card .card-body h3 {
+  text-align: center;
+}
+.image-card p {
+  text-align: center;
+  size: 2rem;
+}
+
+.heading1 {
+  text-align: center;
+}
+
+.team {
+  background-color: #222;
+  padding: 20px;
+  color: #fff;
+}
+.team p {
+  font-size: 20px;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the space between images as needed */
+}
+.image-grid .image-item {
+  max-width: 100px; /* Adjust the width calculation */
+  margin-bottom: 70px; /* Adjust the bottom margin as needed */
+}
+.image-grid .image-item img {
+  position: center;
+  max-width: 3000px;
+  height: auto;
+}
+
+.contact-section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+}
+.contact-section h2 {
+  font-size: 24px;
+}
+.contact-section p {
+  font-size: 16px;
+}
+
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.contact-form {
+  max-width: 400px;
+  width: 100%;
+}
+.contact-form label {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+.contact-form input[type=text],
+.contact-form input[type=email],
+.contact-form textarea {
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact-form button {
+  font-size: 16px;
+  background-color: #222;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+.footer p {
+  font-size: 14px;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+    scroll-padding-top: 8rem;
+  }
+  .home h3 {
+    font-size: 4rem;
+  }
+  section {
+    padding: 3rem 0;
+  }
+}
+@media (max-width: 991px) {
+  .header {
+    padding: 4rem 2rem;
+  }
+  .header.active {
+    padding: 2rem;
+  }
+  .header #menu-btn {
+    display: inline-block;
+  }
+  .header #menu-btn.fa-times {
+    transform: rotate(180deg);
+  }
+  .header .nav {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-flow: column;
+    padding: 1rem 0;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .header .nav.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .header .nav a {
+    margin: 1rem 2rem;
+    color: #222;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}/*# sourceMappingURL=style.css.map */
